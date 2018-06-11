@@ -7,17 +7,17 @@ public class MergeSort {
        int x=1000;
 		 int vec[]=new int [x];
         for (int i=0;i<x;i++) {
-        	vec[i]=(int)(Math.random()*10000000+5);
+        	vec[i]=(int)(Math.random()*1000+5);
         	
         }
         long fin = System.nanoTime();
 		double dif = (double)(fin - inicio)*1.0e-9;
 		System.out.println("el programa dura"+ dif +"s");
          System.out.println("\nVector original\t");
-        // imprimirVector(vec);
+         imprimirVector(vec);
          System.out.println("\nVector ordenado\t");
          ordenacionMergeSort(vec);
-         //imprimirVector(vec);
+         imprimirVector(vec);
  }
  
  public static void ordenacionMergeSort(int vec[]){
